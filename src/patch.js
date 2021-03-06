@@ -18,7 +18,7 @@ export default function (oldVnode, newVnode) {
   if (oldVnode.key === newVnode.key && oldVnode.sel === newVnode.sel) {
     patchVnode(oldVnode, newVnode)
   } else {
-    console.log("不是同一个节点，暴力插入新的，删除旧的");
+    // console.log("不是同一个节点，暴力插入新的，删除旧的");
     let newVnodeElm = createElement(newVnode);
     // 插入到老节点之前
     if (oldVnode.elm.parentNode && newVnodeElm) {

@@ -8,7 +8,11 @@ const myVnode1 = h("ul", {}, [
 ]);
 const myVnode2 = h("ul", {}, [
   h("li", {key: 'A'}, "A"),
+  h("li", {key: 'B'}, "B"),
   h("li", {key: 'C'}, "C"),
+  h("li", {key: 'M'}, "M"),
+  h("li", {key: 'N'}, "N"),
+  h("li", {key: 'Q'}, "Q"),
 ]);
 // const myVnode1 = h("section", {}, '我变成文字了');
 const container = document.getElementById("container");

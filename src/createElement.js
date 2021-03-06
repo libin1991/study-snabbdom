@@ -13,7 +13,7 @@ export default function createElement (vnode) {
     // 内部是子节点，递归创建节点
     for (let i = 0; i < vnode.children.length; i++) {
       const ch = vnode.children[i];
-      console.log(ch);
+      // console.log(ch);
       let chDom = createElement(ch);
       domNode.appendChild(chDom);
     }
